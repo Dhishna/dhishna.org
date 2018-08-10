@@ -123,6 +123,7 @@ li a:hover {
     margin-left: -25px; /* -1/2 width */
     margin-top: -25px;
     opacity: 0;
+    
 }
 
 .emailpng span {
@@ -226,5 +227,7 @@ li a:hover {
         margin-left: -50px; /* -1/2 width */
         margin-top: -50px;
         opacity: 0;
+        transform: rotate(180deg);
+}
     }
 }
