@@ -27,5 +27,5 @@ function closecontact() {
 }
 var scrolling = 20
 function scrolldown(){
-    window.scrollBy(20, 0;
+    window.scrollBy(20, 0);
 }
