@@ -27,6 +27,7 @@ video {
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
     display:inline-block;
+     background: url("../img/bg.mp4") no-repeat;
 }
 
 .background {
