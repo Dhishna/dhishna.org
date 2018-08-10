@@ -25,7 +25,5 @@ function closecontact() {
     })
 
 }
-var scrolling = 20
-function scrolldown(){
-    window.scrollBy(200, 0);
-}
+
+

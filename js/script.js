@@ -5,7 +5,7 @@
 
 
 
-
+var buttonscroll ="no";
 
 sct = $(document).scrollTop();
 function scrollVideo() {
@@ -13,8 +13,8 @@ function scrollVideo() {
             scrollPosition = $(document).scrollTop();
 
 
-        if(stopped == "no" && sct-scrollPosition<0) {
-
+        if((stopped == "no" && sct-scrollPosition<0) || buttonscroll ==="yes") {
+            buttonscroll="no";
             if (displayed == "no") {
                 video.play();
                 if (secc1animate == 0) {
@@ -323,4 +323,10 @@ function removeBlur(){
     $('video').css("-webkit-filter" ,"blur(0px) brightness(100%)");
     $('video').css("-moz-filter" ,"blur(0px)");
     $('video').css("-ms-filter" ,"blur(0px)");
+}
+
+
+function scrolldown(){
+    buttonscroll = "yes";
+    scrollVideo()
 }
