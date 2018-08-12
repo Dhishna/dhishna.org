@@ -25,7 +25,7 @@
 	</script>
 
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'> -->
-
+	<link rel="stylesheet" href="css/style2.css"/>
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -153,19 +153,29 @@
 
 	<section class="cd-section" id="contact">
 		<div class="sec6">
-			<div class="sec6_beta"></div>
-			<div class="sec6_alpha">
-					<div class=" sec6_alpha_contents">
-						<p class="sec6_alpha_feedback">
-							Kindly let us know if you need us to provide you with any further details.
-						</p>
-						<div>
-							My name is<input type="text" id ="name" class="textin" placeholder="Enter your name"><br>
-            			My message is <input type="text" id ="message" class="textin" placeholder="Enter your message">
-            			<br> My e-mail ID is<input type="text"  id ="email" class="textin" placeholder="Enter Your Email Id"><br><br>
-            			<button  class="button" onclick="writeUserData()">Send</button>
-						</div>
-					</div>
+			<div class = "frame">
+				<div id = "button_open_envelope">
+					Email me
+				</div>
+				<div class = "message">
+					<form method="post" action="contact.php">
+						<input type="text" name="name" id="name" placeholder=" Name* " required>
+
+						<input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+
+						<input type="text" name="phone" id="phone" placeholder=" Phone (optional)" autofocus>
+
+						<textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
+
+						<input type="text" name="address" id="address" style="display: none;">
+						<input type="submit" value="Send" id="send">
+					</form>
+				</div>
+				<div class = "bottom"></div>
+				<div class = "left"></div>
+				<div class = "right"></div>
+				<div class = "top"></div>
+
 			</div>
 
 			
@@ -185,6 +195,8 @@
 <script src="js/velocity.min.js"></script>
 <script src="js/velocity.ui.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/script.js"></script>
+
 <script type="text/javascript">
 	$(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
