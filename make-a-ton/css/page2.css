@@ -8,7 +8,7 @@
 
 }
 #gains{
-    font-size: 4em;
+    font-size: 4rem;
 
 }
 
@@ -47,7 +47,7 @@
 
 .card-title{
     opacity: 1;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .card-title:hover{
@@ -60,7 +60,7 @@
     opacity: 1;
     position: absolute;
     padding: 5px 16px 5px 16px;
-    line-height:  1.5em;
+    line-height:  1.5rem;
     font-size: 1.25em;
     top:30%;
 
