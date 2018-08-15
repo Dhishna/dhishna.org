@@ -6,7 +6,7 @@
 }
 html{
     height: 100%;
-    width: 100%;
+    width: 95%;
 
 }
 
@@ -50,6 +50,7 @@ body{
     top: 45%;
     left:50%;
     transform: translate(-50%);
+    display: none;
 }
 
 
